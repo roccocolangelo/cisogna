@@ -10,6 +10,11 @@ html, body {
   color: #1f2d2b;
 }
 
+
+.gallery {
+  margin: 4rem 0;
+}
+
 /* Menu */
 .site-header {
   position: fixed;

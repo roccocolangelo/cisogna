@@ -10,6 +10,72 @@ html, body {
   color: #1f2d2b;
 }
 
+/* Menu */
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem 6vw;
+  background: rgba(11, 71, 75, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.nav-brand {
+  color: #f4f1e8;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-menu a {
+  color: #f4f1e8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 26px;
+  height: 3px;
+  background: #f4f1e8;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #0b474b;
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    padding: 1.5rem;
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+}
+
 /* =========================
    HERO = UNICO BACKGROUND
    ========================= */
@@ -44,14 +110,6 @@ html, body {
   letter-spacing: 0.4em;
   text-transform: uppercase;
   opacity: 0.9;
-}
-
-.brand h1 {
-  margin-top: 0.4rem;
-  font-size: clamp(4rem, 12vw, 9rem);
-  letter-spacing: 0.15em;
-  font-weight: 500;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.6);
 }
 
 /* =========================

@@ -10,6 +10,33 @@ html, body {
   color: #1f2d2b;
 }
 
+/* Liste contenuto (ristorante, prodotti, menu) */
+.text-block ul {
+  list-style: none;            /* via i pallini standard */
+  padding-left: 0;
+  margin: 20px 0 10px;
+}
+
+.text-block ul li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* Pallino personalizzato */
+.text-block ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #2f6f4e;              /* verde naturale */
+  font-size: 1.2em;
+  line-height: 1.2;
+}
+
+
+/*custom style*/
 .margin-40 {
   margin-top:40px !important;
 }
@@ -26,6 +53,8 @@ html, body {
   margin: 4rem 0;
 }
 
+
+/*map*/
 .map {
   margin-top: 20px;
 }

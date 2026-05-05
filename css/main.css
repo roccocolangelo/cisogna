@@ -10,6 +10,21 @@ html, body {
   color: #1f2d2b;
 }
 
+/* GALLERY – solo pagina Ristorante */
+.page-ristorante .gallery {
+  padding: 0;
+}
+
+.page-ristorante .gallery-grid {
+  max-width: 820px;
+  margin: auto;
+}
+
+/* Immagini più basse solo in Ristorante */
+.page-ristorante .gallery-grid img {
+  height: 200px;
+}
+
 /* Liste contenuto (ristorante, prodotti, menu) */
 .text-block ul {
   list-style: none;            /* via i pallini standard */
@@ -48,11 +63,6 @@ html, body {
 .max-width-cta {
   max-width: 136px;
 }
-
-.gallery {
-  margin: 4rem 0;
-}
-
 
 /*map*/
 .map {
@@ -271,6 +281,7 @@ html, body {
    ========================= */
 
 .gallery {
+  margin: 4rem 0;
   padding: 4rem 6vw;
   background-color: #f6f8f5;
 }

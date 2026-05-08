@@ -1,0 +1,134 @@
+html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ristorante · Agriturismo Cisogna</title>
+
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body class="page-ristorante">
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="nav-brand">CISOGNA</div>
+        <a href="index.html" class="cta cta-outline">← Torna alla home</a>
+    </header>
+
+    <!-- CONTENUTO -->
+    <main class="content">
+
+        <section class="text-block">
+            <h2>Ristorante tipico</h2>
+
+            <p>
+                Il nostro agriristoro è ospitato in una piccola <strong>veranda in legno</strong>,
+                con ampie vetrate affacciate sulla campagna, sull’orto e sulle colline circostanti.
+            </p>
+
+            <p>
+                Qui potrete riscoprire una <strong>cucina genuina e casareccia</strong>,
+                preparata con amore da <strong>Laura</strong>, utilizzando principalmente
+                i prodotti del nostro orto e del territorio.
+            </p>
+
+            <p>
+                All’esterno sono disponibili <strong>piazzole immerse nel verde</strong>,
+                ideali per godersi il pasto all’aria aperta, in totale tranquillità.
+            </p>
+        </section>
+
+        <section class="text-block">
+            <h2>I nostri prodotti</h2>
+
+            <p>
+                La nostra cucina si basa su ingredienti semplici e genuini:
+            </p>
+
+            <ul>
+                <li>Carni dell’azienda e di allevatori locali</li>
+                <li>Ortaggi freschi del nostro orto</li>
+                <li>Uova e marmellate di produzione aziendale</li>
+                <li>Pasta fatta in casa</li>
+                <li>Formaggi e ricotta di aziende vicine</li>
+            </ul>
+
+            <p>
+                Tutto rigorosamente <strong>a km 0</strong>.
+            </p>
+        </section>
+
+        <section class="gallery text-block">
+            <h2>Gallery</h2>
+
+            <div class="gallery-grid">
+                <img src="assets/images/ristorante_01.webp" alt="Agriturismo Cisogna - Ristorante">
+                <img src="assets/images/ristorante_02.webp" alt="Agriturismo Cisogna - Ristorante">
+                <img src="assets/images/ristorante_03.webp" alt="Agriturismo Cisogna - Cucina">
+                <!--<img src="assets/images/ristorante_04.webp" alt="Agriturismo Cisogna - Cucina">-->
+                <img src="assets/images/ristorante_05.webp" alt="Agriturismo Cisogna - Piatti">
+                <img src="assets/images/ristorante_06.webp" alt="Agriturismo Cisogna - Piatti">
+                <img src="assets/images/ristorante_07.webp" alt="Agriturismo Cisogna - Tavoli">
+                <img src="assets/images/ristorante_08.webp" alt="Agriturismo Cisogna - Tavoli">
+                <img src="assets/images/ristorante_09.webp" alt="Agriturismo Cisogna - Veranda">
+                <img src="assets/images/ristorante_10.webp" alt="Agriturismo Cisogna - Veranda">
+                <img src="assets/images/ristorante_11.webp" alt="Agriturismo Cisogna - Orto">
+                <img src="assets/images/ristorante_12.webp" alt="Agriturismo Cisogna - Orto">
+                <img src="assets/images/ristorante_13.webp" alt="Agriturismo Cisogna - Esterni">
+                <img src="assets/images/ristorante_14.webp" alt="Agriturismo Cisogna - Esterni">
+                <img src="assets/images/ristorante_15.webp" alt="Agriturismo Cisogna - Dettagli">
+                <img src="assets/images/ristorante_16.webp" alt="Agriturismo Cisogna - Dettagli">
+            </div>
+        </section>
+
+        <section class="text-block margin-40">
+            <h2>Menù</h2>
+
+            <p>
+                Proponiamo un <strong>menù alla carta</strong>, preparato quotidianamente
+                in base ai prodotti freschi disponibili, oppure <strong>menù fissi giornalieri</strong>.
+            </p>
+
+            <h3>Menù fisso</h3>
+
+            <ul>
+                <li>Antipasto misto ciociaro</li>
+                <li>Scelta tra 2 primi fatti in casa</li>
+                <li>Secondo misto con carni dell’azienda o locali</li>
+                <li>Contorni</li>
+                <li>Dolci fatti in casa</li>
+            </ul>
+
+            <p>
+                <strong>Prezzo:</strong> da 26 a 30 euro (bevande escluse)
+            </p>
+
+            <div class="cta-block">
+                <a href="contatti.html" class="cta cta-outline">Prenota un tavolo</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>
+            Agriturismo Cisogna di Colangelo Angela · Anagni · Ciociaria<br>
+            P. IVA 02149290609 · CIN IT060006B5AHRJVMJV
+        </p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+        });
+    </script>
+
+</body>
+
+</html>
